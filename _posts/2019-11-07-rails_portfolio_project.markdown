@@ -21,30 +21,36 @@ So for basic functionality, I wanted users to be able to:
 
 I accomplished (most) of these with the following object relationships:
 
-User:  
+User:
+
 `has_many :products, dependent: :destroy`
 `has_many :comments, dependent: :destroy`
 `has_many :commented_products, through: :comments, source: :product`
 `has_many :conversations, :foreign_key => :sender_id`
 		
-Product:	
+Product:
+
 `belongs_to :user`
 ` belongs_to :category`
 ` has_many :comments, dependent: :destroy`
 ` has_many :users, through: :comments`
 
 Comment: 
+
 `belongs_to :user`
 `belongs_to :product`
 
 Category:
+
 `has_many :products, dependent: :destroy`
 
 Message:
+
 `belongs_to :conversation`
 `belongs_to :user`
 
 Conversation:
+
 `belongs_to :sender, :foreign_key => :sender_id, class_name: 'User'`
 `belongs_to :recipient, :foreign_key => :recipient_id, class_name: 'User'`
 `has_many :messages, dependent: :destroy`

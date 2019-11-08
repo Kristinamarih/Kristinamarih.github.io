@@ -1,14 +1,14 @@
 ---
 layout: post
 title:      "Rails Portfolio Project"
-date:       2019-11-08 00:31:13 +0000
+date:       2019-11-07 19:31:14 -0500
 permalink:  rails_portfolio_project
 ---
 
 
 ## PlantFriend
 
-For my Rails Portfolio Project, I wanted to build something that, in it's fully developed stage, could be useful in my community. I often seen people posting about fruits and veggies for sale that they've grown in their gardens on social media, and decided to make a little online farmer's market of sorts. The initial mapping out of object relationships was a challenge for me - I knew exactly what I wanted my app to do and look like, but it was tough to commit to a direction.
+For my Rails Portfolio Project, I wanted to build something that, in its fully developed stage, could be useful in my community. I often seen people posting about fruits and veggies for sale that they've grown in their gardens on social media, and decided to make a little online farmer's market of sorts. The initial mapping out of object relationships was a challenge for me - I knew exactly what I wanted my app to do and look like, but it was tough to commit to a direction.
 
 So for basic functionality, I wanted users to be able to:
 
